@@ -1,0 +1,97 @@
+.experience-list {
+    padding-top: 200px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem; /* Adjust space between columns and rows as needed */
+  }
+  
+  .Etext {
+    padding-left: 500px;
+  }
+  
+  .Etext h1 {
+    padding-left: 40px;
+  }
+  
+  .experience-card {
+    padding-top: 200px;
+  }
+  
+  .experience-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .experience-item {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .image-container {
+    width: 60%;
+    height: 500px;
+    overflow: hidden;
+  }
+  
+  .experience-image {
+    width: 60%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .image {
+    width: 400px; /* Fixed width for circular images */
+    height: 600px; /* Fixed height for circular images */
+    border-radius: 50%; /* Make it circular */
+    overflow: hidden;
+    margin: 0 auto 10px auto; /* Center the circular image */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hover effect transitions */
+  }
+  
+  .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease; /* Hover effect transition */
+  }
+  
+  .experience-image {
+    width: 60%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Media query for smaller screens */
+  @media (max-width: 768px) {
+    .experience-list {
+      grid-template-columns: 1fr; /* Make images form one column */
+    }
+  
+    .Etext {
+      padding-left: 20px; /* Adjust padding for smaller screens */
+    }
+  
+    .Etext h1 {
+      padding-left: 0; /* Adjust heading padding for smaller screens */
+    }
+  
+    .experience-card {
+      padding-top: 50px; /* Adjust padding for smaller screens */
+    }
+  
+    .image-container {
+      width: 100%; /* Adjust image container width for smaller screens */
+      height: auto; /* Allow height to adjust based on content */
+      margin: 0 auto; /* Center the image container */
+    }
+  
+    .experience-image {
+      width: 100%; /* Make image take full width of container */
+      height: auto; /* Allow height to adjust based on content */
+    }
+  
+    .image {
+      width: 200px; /* Adjust circular image width for smaller screens */
+      height: 200px; /* Adjust circular image height for smaller screens */
+    }
+  }

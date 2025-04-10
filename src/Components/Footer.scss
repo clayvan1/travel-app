@@ -1,0 +1,197 @@
+// Footer.scss
+
+.footer {
+  background-color: #1e1e1e; // Dark background
+  color: #d4d4d4; // Light text
+  padding: 4rem 0 2rem 0;
+  font-family: sans-serif; // Use a readable font
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column; // Stack footer sections
+    align-items: center; // Center items horizontally within the container
+  }
+
+  .footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #333;
+  }
+
+  .footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    color: inherit;
+
+    .icon {
+      font-size: 2.5rem;
+      color: #f9a825; // Accent color (like Ololo's yellow)
+    }
+    span {
+      font-weight: bold;
+      font-size: 1.5rem;
+    }
+  }
+
+  .footer-socials {
+    display: flex;
+    gap: 1rem;
+    font-size: 1.5rem;
+
+    .icon {
+      color: #d4d4d4;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: #f9a825;
+      }
+    }
+  }
+
+  .footer-middle {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 3rem;
+    width: 100%;
+    margin-bottom: 3rem;
+    text-align: center; // Default center for smaller screens
+  }
+
+  .footer-links-column,
+  .footer-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center; // Default center for smaller screens
+
+    h3 {
+      color: #eee;
+      margin-bottom: 1.5rem;
+      font-size: 1.2rem;
+      font-weight: bold;
+      border-bottom: 2px solid #f9a825;
+      padding-bottom: 0.5rem;
+      width: fit-content;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      text-align: center;
+    }
+
+    li {
+      margin-bottom: 0.8rem;
+
+      a {
+        color: #ccc;
+        text-decoration: none;
+        font-size: 0.95rem;
+        transition: color 0.3s ease;
+
+        &:hover {
+          color: #f9a825;
+        }
+      }
+    }
+
+    p {
+      color: #ccc;
+      font-size: 0.95rem;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    .footer-socials-column {
+      margin-top: 2rem;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      font-size: 1.5rem;
+    }
+  }
+
+  .footer-bottom {
+    text-align: center;
+    padding-top: 2rem;
+    border-top: 1px solid #333;
+    color: #999;
+    font-size: 0.85rem;
+    width: 100%; // Ensure bottom section takes full width
+
+    p {
+      margin-bottom: 0.5rem;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  // Responsive adjustments for larger screens (min-width: 769px)
+  @media screen and (min-width: 769px) {
+    .footer-middle {
+      grid-template-columns: repeat(3, 1fr); // Force 3 columns on larger screens
+      text-align: left; // Align text to left in larger columns
+    }
+
+    .footer-links-column,
+    .footer-contact {
+      align-items: flex-start; // Align items to the start in larger columns
+
+      ul {
+        text-align: left;
+      }
+
+      p {
+        text-align: left;
+      }
+
+      // Move socials to the bottom center of each column on larger screens
+      .footer-socials-column {
+        justify-content: center;
+        margin-top: auto; // Push to the bottom
+        padding-top: 1rem; // Add some space above the icons
+      }
+    }
+  }
+
+  // Responsive adjustments for smaller screens (max-width: 768px)
+  @media screen and (max-width: 768px) {
+    .footer-top {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin-bottom: 3rem;
+
+      .footer-logo {
+        margin-bottom: 1.5rem;
+      }
+    }
+
+    .footer-middle {
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      text-align: center;
+    }
+
+    .footer-links-column,
+    .footer-contact {
+      align-items: center;
+      text-align: center;
+
+      .footer-socials-column {
+        justify-content: center;
+        margin-top: 2rem; // Keep some space above on smaller screens
+      }
+    }
+  }
+}

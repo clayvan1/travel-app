@@ -1,0 +1,239 @@
+/* Diani.css */
+
+.Diani {
+    font-family: sans-serif;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 20px;
+  }
+  
+  .diani-home {
+    margin-bottom: 30px;
+  }
+  
+  .slider-item {
+    position: relative;
+  }
+  
+  .slider-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-height: 600px; /* Adjust as needed */
+  }
+  
+  .slider-text-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .slider-text-overlay h3 {
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+  
+  .slider-text-overlay p {
+    margin-bottom: 0;
+    font-size: 0.9em;
+  }
+  
+  .diani-intro {
+    padding: 20px;
+    text-align: justify;
+    margin-bottom: 30px;
+    line-height: 1.6;
+  }
+  
+  .diani-history {
+    padding: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .diani-history h2 {
+    margin-bottom: 15px;
+  }
+  
+  .history-columns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .history-columns p {
+    width: 48%;
+    text-align: justify;
+    line-height: 1.6;
+  }
+  
+  .destination-diani,
+  .diani-activities,
+  .diani-accomodation {
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+  }
+  
+  .destination-diani h2,
+  .diani-activities h2,
+  .diani-accomodation h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+  .destination-diani .image-row,
+  .diani-accomodation .image-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 100%;
+  }
+  
+  .diani-activities .circular-image-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0;
+  }
+  
+  .diani-activities .circular-image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+  }
+  
+  .diani-activities .circular-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border: 2px solid #ddd;
+  }
+  
+  .diani-activities .circular-image + .image-text {
+    text-align: center;
+  }
+  
+  .destination-diani .row-image-container,
+  .diani-accomodation .row-image-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .destination-diani .row-image,
+  .diani-accomodation .row-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 6px;
+  }
+  
+  .destination-diani .image-text,
+  .diani-accomodation .image-text {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 0.9em;
+    color: #555;
+  }
+  
+  .destination-diani .row-image-container:not(:last-child),
+  .diani-accomodation .row-image-container:not(:last-child) {
+    margin-right: 15px;
+  }
+  
+  /* Responsive adjustments (optional) */
+  @media (max-width: 768px) {
+    .history-columns {
+      flex-direction: column;
+    }
+    .history-columns p {
+      width: 100%;
+      margin-bottom: 15px;
+    }
+    .destination-diani .image-row,
+    .diani-accomodation .image-row,
+    .diani-activities .circular-image-row {
+      flex-direction: column;
+      align-items: center;
+    }
+    .destination-diani .row-image-container,
+    .diani-accomodation .row-image-container,
+    .diani-activities .circular-image-container {
+      margin-bottom: 15px;
+    }
+    .destination-diani .row-image-container:not(:last-child),
+    .diani-accomodation .row-image-container:not(:last-child) {
+      margin-right: 0;
+    }
+  }
+  /* Diani.css */
+
+/* ... other styles ... */
+
+.accommodation-slide {
+    margin: 0 10px;
+  }
+  
+  .accommodation-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 6px;
+  }
+  
+  .diani-accomodation {
+    position: relative;
+    padding: 20px;
+    margin-bottom: 30px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    text-align: center; /* Center the button */
+  }
+  
+  .diani-accomodation h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+  
+  .diani-accomodation .slick-prev:before,
+  .diani-accomodation .slick-next:before {
+    color: black !important;
+    font-size: 24px !important;
+  }
+  
+  .request-quote-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    display: inline-block; 
+    text-decoration: none;
+  }
+  
+  .request-quote-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    /* ... other responsive styles ... */
+    .accommodation-slide {
+      margin: 0;
+    }
+  }

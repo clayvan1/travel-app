@@ -1,0 +1,90 @@
+/* pages/packages.css (or your preferred CSS file) */
+
+.packages {
+    padding: 150px;
+
+  }
+  
+  .pack {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates 3 equal columns */
+    grid-template-rows: repeat(3, 1fr); /* Creates 3 equal height rows */
+    gap: 20px; /* Adjust the gap between items as needed */
+    margin-top: 20px;
+  }
+  
+  .package-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex; /* Enable flexbox for content alignment */
+    flex-direction: column; /* Stack image and details vertically */
+  }
+  
+  .package-image {
+    width: 100%;
+    height: 300px; /* Make the image container take up the full height of the grid cell */
+    object-fit: cover; /* Cover the container, potentially cropping */
+  }
+  
+  .package-details {
+    padding: 15px;
+    text-align: left;
+    flex-grow: 1; /* Allow details to take up remaining vertical space */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distribute space between details and button */
+  }
+  
+  .package-details h3 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+  }
+  
+  .package-price {
+    color: green;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .package-location {
+    color: #555;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+  }
+  
+  .package-description {
+    color: #333;
+    font-size: 0.95rem;
+    margin-bottom: 10px;
+    flex-grow: 1; /* Allow description to take up available space */
+  }
+  
+  .package-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    align-self: flex-start;
+    text-decoration: none; /* Align button to the start of the container */
+  }
+  
+  .package-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Responsive adjustments for smaller screens */
+  @media (max-width: 768px) {
+    .pack {
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjust for smaller screens */
+      grid-template-rows: auto; /* Let rows adjust height based on content on smaller screens */
+    }
+    .package-image {
+      height: 200px; /* Set a fixed height for images on smaller screens */
+    }
+  }

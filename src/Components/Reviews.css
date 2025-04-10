@@ -1,0 +1,67 @@
+.reviews-container {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin: 20px;
+}
+
+.reviews-container h2 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.review-card {
+  border: 1px solid #eee;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.review-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.review-header h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.ratings {
+  font-size: 1rem;
+  color: gold;
+}
+
+.star {
+  margin-right: 2px;
+}
+
+.star.empty {
+  color: #ccc;
+}
+
+.comment {
+  color: #777;
+  line-height: 1.5;
+}
+
+/* Optional: Style for the "Add Your Review" button */
+/* .add-review-button {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.add-review-button:hover {
+  background-color: #0056b3;
+} *//*# sourceMappingURL=Reviews.css.map */
